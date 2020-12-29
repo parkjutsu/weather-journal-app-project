@@ -4,7 +4,7 @@ This project was created as part of the Udacity Front End Web Developer Nanodegr
 
 ## Getting Started
 
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
+These instructions will get you a copy of the project up and running on your local machine.
 
 ### Prerequisites
 
@@ -17,7 +17,7 @@ node -v
 
 ### Installation
 
-This project makes use of multiple Node.js packages which can be installed using NPM. Specifically, we will be using Express, Body-Parser, and CORS.
+This project makes use of multiple Node.js packages which can be installed using NPM. Specifically, it uses Express, Body-Parser, and CORS.
 
 To install each package, run the respective code from the command line
 
