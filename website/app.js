@@ -40,7 +40,7 @@ const postData = async (url = '', data = {}) => {
     }
 };
 
-/* Function to update UI */
+/* Function to GET project data and update UI */
 const updateUI = async () => {
     const request = await fetch('/all');
     try {
@@ -72,7 +72,7 @@ function performAction(e) {
             userRes: feelings 
         });
     })
-    .then(data => {
+    .then(() => {
         updateUI();
     });
 }

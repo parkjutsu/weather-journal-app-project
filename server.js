@@ -28,7 +28,7 @@ const server = app.listen(port, listening);
 
 // Callback to debug
 function listening() {
-    console.log("server running");
+    console.log('server running');
     console.log(`running on localhost: ${port}`);
 }
 
@@ -40,6 +40,8 @@ const addWeather = (req, res) => {
         date: data.date,
         userRes: data.userRes
     }
+    console.log('new entry added')
+    console.log(newEntry);
     projectData.push(newEntry);
 };
 
@@ -48,6 +50,7 @@ app.post('/addWeather', addWeather);
 
 // Callback function to complete GET '/all'
 const getWeatherData = (req, res) => {
+    console.log('data request from client');
     console.log(projectData);
     res.send(projectData);
 };
