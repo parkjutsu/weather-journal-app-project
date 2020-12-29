@@ -4,7 +4,7 @@ This project was created as part of the Udacity Front End Web Developer Nanodegr
 
 ## Getting Started
 
-These instructions will get you a copy of the project up and running on your local machine.
+These instructions will help you get a copy of the project up and running on your local machine.
 
 ### Prerequisites
 
