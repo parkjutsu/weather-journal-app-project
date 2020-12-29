@@ -1,5 +1,5 @@
-// Setup empty JS object to act as endpoint for all routes
-projectData = {};
+// Setup empty JS array to act as endpoint for all routes
+projectData = [];
 
 // Require Express to run server and routes
 const express = require('express');
@@ -32,10 +32,25 @@ function listening() {
     console.log(`running on localhost: ${port}`);
 }
 
-// Initialize all route with a callback function
-
-// Callback function to complete GET '/all'
+// Callback function to complete POST '/addWeather'
+const addWeather = (req, res) => {
+    let data = req.body;
+    let newEntry = {
+        temp: data.temp,
+        date: data.date,
+        userRes: data.userRes
+    }
+    projectData.push(newEntry);
+};
 
 // Post Route
+app.post('/addWeather', addWeather);
 
+// Callback function to complete GET '/all'
+const getWeatherData = (req, res) => {
+    console.log(projectData);
+    res.send(projectData);
+};
 
+// Initialize all route with a callback function
+app.get('/all', getWeatherData)
