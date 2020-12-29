@@ -2,7 +2,7 @@
 
 ## Overview
 
-This project is part of the Udacity Front End Web Developer Nanodegree Program. It's purpose is to create an asynchronous web app that uses a Web API and user data to dynamically update the UI.
+This project was created as part of the Udacity Front End Web Developer Nanodegree Program. The goal of this project is to create an asynchronous web app that uses a Web API and user data to dynamically update the UI.
 
 ## Built With
 
