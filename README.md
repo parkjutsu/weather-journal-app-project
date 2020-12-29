@@ -47,7 +47,7 @@ localhost:8000
 
 * [Node.js](https://nodejs.org/en/)
 * [Express](https://expressjs.com/)
-* [OpenWeather API](https://openweathermap.org/api)
+* [OpenWeatherMap API](https://openweathermap.org/api)
 
 ## Authors
 
